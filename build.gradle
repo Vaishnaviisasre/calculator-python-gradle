@@ -1,0 +1,13 @@
+plugins {
+    id 'base'
+}
+
+task calculate(type: Exec) {
+    description = "Run Python calculator with num1, num2, and operation as arguments"
+
+    def num1 = project.findProperty("num1") ?: "0"
+    def num2 = project.findProperty("num2") ?: "0"
+    def operation = project.findProperty("operation") ?: "add"
+
+    commandLine "python3", "calculator.py", num1, num2, operation
+}
