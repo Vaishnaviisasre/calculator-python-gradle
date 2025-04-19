@@ -25,3 +25,7 @@ if len(sys.argv) != 4:
 # Perform the calculation
 result = calculate(sys.argv[1], sys.argv[2], sys.argv[3])
 print("Result:", result)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 86c8898 (Add Gradle wrapper)
